@@ -6,7 +6,48 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<super-tabs>
+  <super-tabs-toolbar>
+
+      <super-tab-button>
+        <ion-icon name="paper" color="light"></ion-icon>
+        <ion-label>News</ion-label>
+      </super-tab-button>
+    
+      <super-tab-button>
+        <ion-icon name="contact" color="light"></ion-icon>
+        <ion-label>Account</ion-label>
+      </super-tab-button>
+
+      <super-tab-button>
+        <ion-icon name="information-circe-outline" color="light"></ion-icon>
+        <ion-label>About</ion-label>
+      </super-tab-button>
+
+  </super-tabs-toolbar>
+
+
+  <super-tabs-container>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="newsPage" #newsNav></ion-nav>
+      </ion-content>
+    </super-tab>
+
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="accountPage"></ion-nav>
+      </ion-content>
+    </super-tab>
+
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="aboutPage"></ion-nav>
+      </ion-content>
+    </super-tab>
+  </super-tabs-container>
+</super-tabs>
+<!-- <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
@@ -16,5 +57,5 @@
   <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  </div> -->
+<!-- </ion-content> -->
