@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: NewsPage
+  },
+  {
+    path: 'newsdetails',
+    loadChildren: () => import('../news-details/news-details.module').then( m => m.NewsDetailsPageModule)
   }
 ];
 

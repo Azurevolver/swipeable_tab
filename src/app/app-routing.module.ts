@@ -22,11 +22,7 @@ const routes: Routes = [
   {
     path: 'account',
     loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
-  },
-  {
-    path: 'news-details',
-    loadChildren: () => import('./news-details/news-details.module').then( m => m.NewsDetailsPageModule)
-  },
+  }
 ];
 
 @NgModule({

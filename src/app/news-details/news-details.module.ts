@@ -15,6 +15,7 @@ import { NewsDetailsPage } from './news-details.page';
     IonicModule,
     NewsDetailsPageRoutingModule
   ],
-  declarations: [NewsDetailsPage]
+  declarations: [NewsDetailsPage],
+  entryComponents: [NewsDetailsPage]
 })
 export class NewsDetailsPageModule {}
