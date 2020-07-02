@@ -15,6 +15,7 @@ import { AccountPage } from './account.page';
     IonicModule,
     AccountPageRoutingModule
   ],
-  declarations: [AccountPage]
+  declarations: [AccountPage],
+  entryComponents: [AccountPage]
 })
 export class AccountPageModule {}

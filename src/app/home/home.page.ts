@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NewsPage } from '../news/news.page';
+import { AccountPage } from '../account/account.page';
+import { AboutPage } from '../about/about.page';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  newsPage = NewsPage;
+  accountPage = AccountPage;
+  aboutPage = AboutPage;
+  
   constructor() {}
 
 }
